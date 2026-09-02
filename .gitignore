@@ -27,3 +27,12 @@ build/
 logs/
 .playwright-mcp/
 临时资源存放/
+
+# 答辩和竞赛相关文件
+*答辩*.html
+*答辩*.pdf
+*答辩*.docx
+*挑战赛*.js
+*挑战赛*.docx
+*挑战赛*.pdf
+生成*.js
