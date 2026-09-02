@@ -18,6 +18,12 @@ build/
 
 # 工作日志和临时文件
 *日志*.md
+*LOG*.md
+*PLAN*.md
+*报告*.md
+*记录*.md
+*清单*.md
+*稿*.md
 logs/
 .playwright-mcp/
 临时资源存放/
