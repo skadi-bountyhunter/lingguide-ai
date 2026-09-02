@@ -1,0 +1,63 @@
+# 环境文件
+.env
+.env.local
+backend/.env
+scripts/*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+venv/
+*.so
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# 部署
+uploads/
+chroma_store/
+*.db
+*.sqlite3
+backend/app/data/
+backend/app/chroma_store/
+
+# Chrome 调试配置
+.chrome-cdp-profile/
+.chrome-debug-profile/
+.playwright-mcp/
+.pytest_cache/
+
+# 备份和打包
+backups/
+release/
+dist/
+build/
+desktop/dist/
+
+# 测试和临时文件
+*.jpeg
+*.jpg
+*.png
+_docx_*/
+临时资源存放/
+
+# 子模块
+digital-human/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/settings.local.json

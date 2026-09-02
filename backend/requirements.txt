@@ -1,0 +1,46 @@
+# ===== Web Framework =====
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.19
+websockets==14.1
+
+# ===== Database =====
+sqlalchemy[asyncio]==2.0.36
+aiosqlite==0.20.0
+asyncpg==0.30.0
+pgvector==0.3.6
+alembic==1.14.0
+
+# ===== AI / ML =====
+faster-whisper==1.0.3
+langchain==0.3.13
+langchain-community==0.3.13
+chromadb==0.5.23
+sentence-transformers==3.3.1
+# NumPy 2.x + 配套编译的 scipy/sklearn，避免 "numpy.core.multiarray failed to import"
+numpy>=2.0,<3.0
+scipy>=1.14
+scikit-learn>=1.6
+openai==1.57.4
+snownlp==0.12.3
+jieba==0.42.1
+# 数值计算栈：须与 NumPy 2.x 二进制兼容，否则 sentence-transformers 导入失败、RAG 降级
+numpy>=2.0,<3.0
+scipy>=1.14              # 1.13 是 NumPy 1.x 编译，与 numpy 2 冲突
+scikit-learn>=1.6        # 1.5 的 Cython 扩展是 NumPy 1.x 编译，同上
+
+# ===== Utilities =====
+pydantic==2.10.3
+pydantic-settings==2.7.0
+redis==5.2.1
+httpx==0.28.1
+python-dotenv==1.0.1
+python-docx==1.1.2
+pandas==2.2.3
+openpyxl==3.1.5
+edge-tts==6.1.14
+loguru==0.7.3
+
+# ===== Testing =====
+pytest==8.3.4
+pytest-asyncio==0.24.0

@@ -1,0 +1,93 @@
+version: "3.8"
+
+services:
+  # ========== 数据库 ==========
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: lingguide-postgres
+    environment:
+      POSTGRES_DB: lingguide
+      POSTGRES_USER: lingguide
+      POSTGRES_PASSWORD: lingguide123
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./backend/alembic/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lingguide"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: lingguide-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ========== 向量数据库 ==========
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: lingguide-chromadb
+    ports:
+      - "8001:8000"
+    volumes:
+      - chromadata:/chroma/chroma
+    environment:
+      IS_PERSISTENT: "TRUE"
+      ANONYMIZED_TELEMETRY: "FALSE"
+
+  # ========== 后端 ==========
+  backend:
+    build: ./backend
+    container_name: lingguide-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      chromadb:
+        condition: service_started
+    volumes:
+      - ./backend:/app
+      - ./uploads:/app/uploads
+      - ./knowledge-base:/app/knowledge-base
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # ========== 游客前端 ==========
+  frontend-visitor:
+    build: ./frontend-visitor
+    container_name: lingguide-visitor
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend-visitor:/app
+      - /app/node_modules
+
+  # ========== 管理后台前端 ==========
+  frontend-admin:
+    build: ./frontend-admin
+    container_name: lingguide-admin
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend-admin:/app
+      - /app/node_modules
+
+volumes:
+  pgdata:
+  chromadata:

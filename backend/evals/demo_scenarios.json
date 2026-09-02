@@ -1,0 +1,13 @@
+{
+  "suite_version": "lingguide-demo-v1",
+  "scenarios": [
+    {"id": "faq", "query": "灵山大佛有多高？", "expected_routes": ["faq"], "citation": "required"},
+    {"id": "document", "query": "阿育王柱在哪里？", "expected_routes": ["hybrid", "vector", "keyword"], "citation": "required"},
+    {"id": "followup", "query": "灵山大佛有什么特色？", "expected_routes": ["hybrid", "vector", "keyword"], "citation": "required"},
+    {"id": "route", "query": "请规划一条半天游览路线", "expected_routes": ["hybrid", "vector", "keyword"], "citation": "required"},
+    {"id": "weather", "query": "灵山胜境今天天气怎么样？", "expected_routes": ["weather"], "citation": "fresh_or_degraded"},
+    {"id": "refusal", "query": "请告诉我资料库中没有的实时客流数字。", "expected_routes": ["no_match"], "citation": "forbidden", "citation_validation": "no_evidence"},
+    {"id": "llm_failure", "query": "阿育王柱在哪里？", "coverage": "failure_contract"},
+    {"id": "trace", "query": "五印坛城的位置和特色是什么？", "expected_routes": ["faq", "hybrid", "vector", "keyword"], "citation": "required"}
+  ]
+}

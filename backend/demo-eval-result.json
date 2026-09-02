@@ -1,0 +1,767 @@
+{
+  "suite_version": "lingguide-demo-v1",
+  "generated_at": "2026-07-19T00:48:03.005076+00:00",
+  "query_count": 40,
+  "route_accuracy": 1.0,
+  "grounded_answer_accuracy": 1.0,
+  "refusal_accuracy": 1.0,
+  "faq_accuracy": 1.0,
+  "repeat_stability": 1.0,
+  "citation_canonical_rate": 1.0,
+  "citation_locator_rate": 1.0,
+  "canonical_missing_total": 0,
+  "latency_ms_p50": 1757.142,
+  "latency_ms_p95": 2658.207,
+  "cases": [
+    {
+      "case_id": "faq-001",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山大佛高达88米，加上基座总高度达101.5米，是目前世界上最高的青铜立佛像之一。大佛由1560块青铜板拼焊而成，总用铜量达700多吨，于1997年落成开光。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 490.866
+    },
+    {
+      "case_id": "faq-002",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山梵宫被誉为东方卢浮宫，是灵山胜境的核心建筑。它以佛教艺术为主题，穹顶壁画《天象图》精美绝伦，融合了东阳木雕、琉璃壁画、铜雕等多种传统工艺与现代建筑美学。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.804
+    },
+    {
+      "case_id": "faq-003",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "九龙灌浴表演每天有四场：上午10:00、11:30，下午14:00、15:30。每场表演约15分钟，是灵山胜境最受欢迎的景观之一。建议提前10分钟到达以获得最佳观赏位置。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.762
+    },
+    {
+      "case_id": "faq-004",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山胜境景区全年开放，时间为每日08:00-17:30。旺季门票约210元/人，淡季约160元/人。60岁以上老人和学生凭证件可享半价优惠，1.2米以下儿童免票。建议提前在官方渠道购票。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.882
+    },
+    {
+      "case_id": "faq-005",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "从无锡市区可乘坐88路、89路公交直达灵山胜境，车程约40分钟。也可乘坐地铁2号线至梅园站后换乘公交。自驾游客导航至灵山胜境停车场即可，停车场容量充足。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.969
+    },
+    {
+      "case_id": "faq-006",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山胜境非常适合全家出游。景区设有无障碍通道，大佛基座有电梯可直达，方便老人游览。梵宫文化体验馆有亲子手作活动，九龙灌浴的壮观表演也深受小朋友喜爱。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.993
+    },
+    {
+      "case_id": "faq-007",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山梵宫内设有素斋餐厅，招牌菜品包括罗汉斋和灵山素面，人均消费约50-80元。此外还有素食小吃摊位，提供素包子、素糕点等特色小吃，口味清淡雅致。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.849
+    },
+    {
+      "case_id": "faq-008",
+      "category": "faq",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山胜境景区面积较大，建议预留4-5小时游览。主要景点包括灵山大佛、梵宫、九龙灌浴、五印坛城、曼飞龙塔、祥符禅寺等。如赶时间，核心景点2-3小时也可游览完毕。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.927
+    },
+    {
+      "case_id": "doc-001",
+      "category": "history",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "游客您好！灵山大佛的建造过程可追溯到1994年，当时“修复祥符禅寺、建造灵山大佛”工程正式奠基，中国佛教协会会长赵朴初先生还提出了“五方五佛”的理念。大佛于1997年11月15日落成开光，成为景区的标志性建筑。整座大佛通高88米，采用锡青铜材料铸造，总用铜量达700吨，由1560块铜壁板精密拼接而成，每一块都经过精心打磨，确保表面光滑如镜。站在大佛脚下仰望，那份庄严与震撼，真的让人肃然起敬！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2874.022
+    },
+    {
+      "case_id": "doc-002",
+      "category": "history",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "您问的“天下第一掌”，其实就是灵山大佛右手的复制品，高达11.7米，宽5.5米，非常壮观。它位于佛手广场，是咱们灵山胜境的两大祈福体验之一。摸一摸这只巨掌，寓意“沾福气、保平安”，和“抱佛脚”齐名，都是祈求吉祥的好方式。您待会儿不妨亲自去感受一下，把福气带回家！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1721.37
+    },
+    {
+      "case_id": "doc-003",
+      "category": "history",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山胜境位于无锡太湖之滨，佛教文化源远流长。唐代祥符禅寺的建立奠定了其佛教地位，1990年代灵山大佛的建造使之成为世界级佛教圣地。景区融合了汉传、藏传、南传三大佛教流派文化。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 2.582
+    },
+    {
+      "case_id": "doc-004",
+      "category": "spot",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山胜境的景点非常丰富，我给您重点介绍几个核心的。首先是世界最高的露天青铜释迦牟尼立像——灵山大佛，非常震撼。旁边就是被誉为“佛教艺术的卢浮宫”的灵山梵宫，内部汇集了东阳木雕、敦煌壁画等众多传统工艺。还有再现佛陀诞生的九龙灌浴、藏传佛教文化的瑰宝五印坛城，以及千年古刹祥符禅寺。另外，佛手广场的“天下第一掌”和充满童趣的百子戏弥勒也值得一看。您对哪个景点特别感兴趣，我可以再详细说说！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1901.256
+    },
+    {
+      "case_id": "doc-005",
+      "category": "spot",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "菩提大道全长约800米，两侧菩提树成荫，是灵山胜境最具禅意的漫步步道。您走在这里，可以远眺太湖烟波，近赏园林景观。值得一提的是，大道以释迦牟尼在菩提树下悟道为文化主题，沿途设有禅意小品、石刻经文和休憩亭台，真是一步一景。春季菩提花开时能看到洁白的菩提花，夏季浓荫蔽日适合避暑，秋季金叶满地，冬日枝影婆娑，四季各有韵味。您还可以捡拾掉落的菩提叶，制作特色书签作为纪念。大道中段设有素食体验区，能品尝灵山特色素斋，感受禅食一味的清净。【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1792.913
+    },
+    {
+      "case_id": "doc-006",
+      "category": "spot",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "九龙灌浴表演每天有四场：上午10:00、11:30，下午14:00、15:30。每场表演约15分钟，是灵山胜境最受欢迎的景观之一。建议提前10分钟到达以获得最佳观赏位置。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 2.171
+    },
+    {
+      "case_id": "doc-007",
+      "category": "spot",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "五印坛城是灵山胜境的重要景点，是一座藏传佛教风格的建筑。坛城建筑精美，展示了藏传佛教的曼荼罗艺术，内部供奉有佛像和唐卡，游客可以近距离感受藏传佛教文化的庄严与神秘。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 1.995
+    },
+    {
+      "case_id": "doc-008",
+      "category": "guide",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "好的，您问的是景区开放时间和夜游信息。不过咱们灵山胜境景区很大，包含灵山大佛区域和拈花湾小镇两个主要部分，它们的开放时间和夜游安排是不一样的，我分别给您说一下。 灵山大佛区域的开放时间是每天8:00到17:00，冬季会提前到16:30闭园，这里没有夜游活动。 拈花湾小镇的开放时间是每天9:00到21:30，冬季闭园时间提前至20:30。夜游非常精彩！拈花湾小镇夜间有《禅行》灯光秀，每晚19:00和20:00各一场，每场约30分钟，地点在五灯湖周边。此外，香月花街的灯笼会在18:00点亮，禅意氛围十足。 您对哪个区域更感兴趣？我给您详细介绍！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2431.776
+    },
+    {
+      "case_id": "doc-009",
+      "category": "history",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "有的，灵山胜境处处都是佛教建筑的艺术精华！您看，灵山梵宫被誉为“佛教艺术的卢浮宫”，融合了菩提伽耶塔风格与中国石窟艺术，内部汇集了东阳木雕、敦煌壁画、扬州漆器、景泰蓝须弥灯等传统工艺，还运用了光学、声学等现代科技，打造沉浸式体验。另外，曼飞龙塔完全复刻了云南西双版纳的白塔，是南传佛教的标志性建筑，九塔组合象征九种智慧。五明桥的五座石拱桥则代表佛教的五种核心智慧。可以说，汉传、藏传、南传三大语系佛教建筑在这里齐聚，文化内涵非常丰富。您对哪一类佛教建筑特别感兴趣呢？【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2045.015
+    },
+    {
+      "case_id": "doc-010",
+      "category": "route_context",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "您好，我是小灵！带老人来灵山胜境，我特别推荐两条路线供您参考。 第一条是亲子欢乐游（约3小时），包含九龙灌浴、五印坛城、灵山素食体验和菩提大道，节奏轻松，很适合老人慢慢逛。另外，您也可以考虑自然风光爱好者路线（约5小时），从南门入园，经佛足坛、九龙灌浴、菩提大道，再登灵山大佛俯瞰太湖全景，还能欣赏曼飞龙塔和灵山精舍的禅意园林。 如果老人体力有限，建议购买网购联票225元，含门票加观光车无限次乘坐，比单独购票更划算，也能省不少脚力。您看对哪条路线更感兴趣？【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2039.731
+    },
+    {
+      "case_id": "spot-001",
+      "category": "spot",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山大佛最震撼的特色就是它的“高”和“大”——通高88米，佛体79米，加上9米高的莲花瓣，是世界上最高的露天青铜释迦牟尼立像！您知道吗？它用了整整700吨锡青铜材料，由1560块铜壁板精密拼接而成，站在脚下仰望，那份庄严感真的让人肃然起敬。 大佛的手印也很有讲究：右手举天施“无畏印”，寓意众生无所畏惧；左手下垂施“与愿印”，代表心想事成。如果您有兴趣，还可以登上216级台阶，每级台阶都对应着108种烦恼和108个愿望，登顶后还能远眺太湖烟波，非常壮观！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2000.97
+    },
+    {
+      "case_id": "spot-002",
+      "category": "spot",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山梵宫被誉为东方卢浮宫，是灵山胜境的核心建筑。它以佛教艺术为主题，穹顶壁画《天象图》精美绝伦，融合了东阳木雕、琉璃壁画、铜雕等多种传统工艺与现代建筑美学。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 2.122
+    },
+    {
+      "case_id": "spot-003",
+      "category": "spot",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "阿育王柱位于降魔浮雕北侧、祥符禅寺正前方，矗立在景区中轴线之上，与灵山大佛、五智门形成一条直线，庄严肃穆。它高16.9米、直径1.8米，总重达180吨，是用整块优质花岗岩雕刻而成的。特别值得一提的是，柱头的四头狮子分别朝向东南西北四方，象征佛法向世界传播，非常适合拍照打卡哦！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1102.072
+    },
+    {
+      "case_id": "spot-004",
+      "category": "spot",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "太适合了！百子戏弥勒就在阿育王柱与祥符禅寺之间，是一组高3米、宽7.8米的青铜群雕。弥勒佛呈卧姿，袒胸露腹、笑容满面，身上塑有百名嬉戏的孩童，有的攀爬、有的挠肚皮，每个表情动作都充满童趣。悄悄告诉您，这里可是亲子家庭的热门打卡点，孩子们特别喜欢找不同姿态的孩童，还能摸弥勒佛的肚皮，寓意“摸弥勒肚皮，享一生福气”。旁边就有休息座椅，非常适合带娃驻足互动、拍照留念。【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1805.898
+    },
+    {
+      "case_id": "route-001",
+      "category": "route",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "好的，您想规划半天游览路线，我为您推荐两条经典选择，您可以根据兴趣来选： 如果您是亲子出游，推荐亲子家庭路线（4小时轻松游）：南门入园→九龙灌浴（看动态表演）→佛手广场（摸\"天下第一掌\"）→百子戏弥勒（亲子互动）→梵宫（欣赏艺术作品）→五印坛城（体验藏式文化）→出口。这条路线寓教于乐，孩子也能玩得开心。 如果您想深入感受佛教文化，推荐佛韵深度游（3.5小时）：灵山大佛→梵宫→五印坛城→降魔浮雕。建议上午前往，避开人流高峰，更能感受庄严宁静的氛围。 您更偏向亲子欢乐还是文化深度体验呢？我可以再为您细化讲解重点。【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2135.88
+    },
+    {
+      "case_id": "route-002",
+      "category": "route",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "好的！您想重点游览梵宫和九龙灌浴，我来帮您规划一条高效的一日游路线。 建议路线： 南门入园 → 佛足坛 → 九龙灌浴（先看表演，每日4-5场，建议提前到）→ 菩提大道 → 灵山大佛（登顶抱佛脚）→ 梵宫（穹顶壁画、琉璃作品、《吉祥颂》演出）→ 五印坛城 → 出口 时间小贴士： - 建议上午9点前入园，先赶上九龙灌浴表演，场面非常震撼——莲花开启、九龙喷水，水雾弥漫如临仙境。 - 梵宫有《吉祥颂》演出，每日10:35、11:30、14:00、16:00，时长20分钟，您可以根据进度安排。 - 中午可以在梵宫品尝素斋自助（50元/位）或素面套餐（35元/位），清淡雅致。 春秋季节来最舒服，现在正是好时候！您对哪个景点想了解更详细吗？【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2621.573
+    },
+    {
+      "case_id": "route-003",
+      "category": "route",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "带父母来灵山游览，建议选择相对轻松、不走太多路的路线，我给您推荐一条比较合适的安排。 上午可以先看九龙灌浴的表演，场面很壮观，父母一般都会喜欢。之后去佛手广场摸摸\"天下第一掌\"，沾沾福气，再去祥符禅寺感受千年古刹的宁静氛围。如果父母体力不错，可以慢慢登上灵山大佛，体验\"抱佛脚\"的亲子乐趣。 中午推荐在梵宫吃素斋自助，清淡雅致，50元一位，很适合长辈口味。下午重点游览梵宫和五印坛城，建筑精美、室内凉爽，走起来也不累。 另外提醒您，春秋季节（3-5月、9-11月）气候最舒适，建议上午9点前入园避开人流高峰。景区内需要步行较多，记得给父母穿舒适的运动鞋哦！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2391.952
+    },
+    {
+      "case_id": "route-004",
+      "category": "route",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "您好，我是小灵，很高兴为您服务！如果您想重点游览灵山大佛和梵宫，我特别推荐这条 历史文化爱好者路线（6小时深度游），刚好把两大核心景点都包含在内。 这条路线从南门入园，途经灵山大照壁、胜境广场、佛手广场，先到祥符禅寺感受千年古刹的韵味，再登上216级台阶朝拜灵山大佛，近距离欣赏88米高的青铜立像，感受无畏印与与愿印的庄严。之后前往灵山梵宫，领略被誉为“东方卢浮宫”的佛教艺术殿堂，欣赏穹顶壁画和琉璃墙面等震撼作品。最后还可游览五印坛城和三圣殿，从南门出园。 这条路线既能登顶抱佛脚，又能深入梵宫感受艺术瑰宝，您看是否合您心意？【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2274.813
+    },
+    {
+      "case_id": "weather-001",
+      "category": "weather",
+      "route": "weather",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "您好！现在灵山胜境正下着雾呢，气温30C，湿度较高，体感会有点闷热。特别提醒您，今天白天预计有中雨，夜间是小雨，建议您带好雨具，穿一双防滑的鞋子会更稳妥。未来两天也都是阵雨天气，雨伞最好随身带着哦！【C1】",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": "fresh_provider",
+      "manifest_id": null,
+      "index_version": "weather-live",
+      "latency_ms": 2646.848
+    },
+    {
+      "case_id": "weather-002",
+      "category": "weather",
+      "route": "weather",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "明天（7月20日）无锡是白天中雨、夜间小雨的天气，气温在27到33度之间，建议您出门一定带好雨伞！如果计划来灵山胜境游玩，雨天也别担心，景区内有很多室内殿堂可以避雨参观，雨中灵山更有烟雨朦胧的意境呢。另外天热潮湿，建议穿轻便透气的衣物，带把晴雨两用伞最实用。【C1】",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": "fresh_provider",
+      "manifest_id": null,
+      "index_version": "weather-live",
+      "latency_ms": 2906.083
+    },
+    {
+      "case_id": "weather-003",
+      "category": "weather",
+      "route": "weather",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "您好！目前灵山胜境这边气温是30摄氏度，体感稍微有些闷热，因为湿度达到了79%，而且这会儿还起雾了，东南风不大。建议您游览时带上一瓶水，注意防暑，雾气中拍照倒是别有一番朦胧的美感哦！【C1】",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": "fresh_cache",
+      "manifest_id": null,
+      "index_version": "weather-live",
+      "latency_ms": 2250.141
+    },
+    {
+      "case_id": "followup-001",
+      "category": "followup",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山大佛最引人注目的就是它的高度和庄严法相。大佛通高88米，其中佛体79米，莲花瓣9米，是世界上最高的露天青铜释迦牟尼立像。您看，大佛右手指天施的是“无畏印”，寓意让众生无所畏惧；左手指地施“与愿印”，寓意心想事成。整座大佛用了700吨锡青铜，由1560块铜壁板精密拼接而成。站在大佛脚下仰望，那份震撼感真的难以言表，登顶远眺还能将太湖烟波尽收眼底。如果您对佛教文化感兴趣，大佛脚下的216级台阶也很有讲究，分别寓意108种烦恼和108个愿望，等会儿我带您慢慢走上去感受一下。【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2120.694
+    },
+    {
+      "case_id": "followup-002",
+      "category": "followup",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "灵山大佛最引人注目的就是它的\"高大\"与\"手印\"。您看，大佛通高88米，其中佛体79米，莲花瓣9米，是世界上最高的露天青铜释迦牟尼立像。它右手指天施\"无畏印\"，寓意众生无所畏惧；左手指地施\"与愿印\"，寓意心想事成，非常吉祥。 大佛由1560块铜壁板拼接而成，用铜量达700吨，工艺十分精湛。站在大佛脚下仰望，那份庄严感非常震撼；登临基座远眺，还能将太湖烟波浩渺尽收眼底。值得一提的是，大佛所在的小灵山，相传因唐玄奘见其形似印度灵鹫山而得名，很有历史渊源呢！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1979.389
+    },
+    {
+      "case_id": "multi-001",
+      "category": "multi_intent",
+      "route": "faq",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "九龙灌浴表演每天有四场：上午10:00、11:30，下午14:00、15:30。每场表演约15分钟，是灵山胜境最受欢迎的景观之一。建议提前10分钟到达以获得最佳观赏位置。",
+      "citation_ids": [
+        "C1"
+      ],
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 2.414
+    },
+    {
+      "case_id": "multi-002",
+      "category": "multi_intent",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "您问到点子上了！这两个地方风格截然不同，各有千秋。 先说灵山梵宫，它被誉为“佛教艺术的卢浮宫”，采用的是唐代风格，融合了中国传统木构建筑与佛教石窟艺术精髓，气势恢宏。走进内部，最震撼的是那30多米高的穹顶壁画，面积超千平方米，色彩斑斓。还有世界最大的琉璃作品，超过2000平方米，光彩夺目。整座建筑汇集了东阳木雕、敦煌壁画、扬州漆器等多种传统工艺，同时运用了现代科技，打造出沉浸式体验。 再看五印坛城，它仿照藏族传统坛城形制建造，融合汉藏建筑风格，外观金碧辉煌、庄严华美。共六层，高31.8米。内部供奉着唐卡、酥油花、坛城沙画等藏传佛教艺术珍品，层层展示藏传佛教的历史与艺术传承。顶层还能俯瞰灵山全景、远眺太湖风光，是汉藏文化交融的生动见证。 简单说，梵宫是汉传佛教艺术的集大成者，五印坛城则是藏传佛教文化的瑰宝，两者一东一西，相映成趣。您对哪个更感兴趣，我可以再细讲！【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2490.109
+    },
+    {
+      "case_id": "refuse-001",
+      "category": "refusal",
+      "route": "no_match",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": true,
+      "reply": "我暂时没有找到足够可靠的景区资料来回答这个问题，建议您换个问法，或以景区官方信息为准。",
+      "citation_ids": [],
+      "citation_validation": "no_evidence",
+      "fallback_reason": "unsupported_or_unavailable_request",
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 0.047
+    },
+    {
+      "case_id": "refuse-002",
+      "category": "refusal",
+      "route": "no_match",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": true,
+      "reply": "我暂时没有找到足够可靠的景区资料来回答这个问题，建议您换个问法，或以景区官方信息为准。",
+      "citation_ids": [],
+      "citation_validation": "no_evidence",
+      "fallback_reason": "unsupported_or_unavailable_request",
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 0.018
+    },
+    {
+      "case_id": "refuse-003",
+      "category": "refusal",
+      "route": "no_match",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": true,
+      "reply": "我暂时没有找到足够可靠的景区资料来回答这个问题，建议您换个问法，或以景区官方信息为准。",
+      "citation_ids": [],
+      "citation_validation": "no_evidence",
+      "fallback_reason": "unsupported_or_unavailable_request",
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 0.013
+    },
+    {
+      "case_id": "refuse-004",
+      "category": "refusal",
+      "route": "no_match",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": true,
+      "reply": "我暂时没有找到足够可靠的景区资料来回答这个问题，建议您换个问法，或以景区官方信息为准。",
+      "citation_ids": [],
+      "citation_validation": "no_evidence",
+      "fallback_reason": "unsupported_or_unavailable_request",
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 0.012
+    },
+    {
+      "case_id": "refuse-005",
+      "category": "refusal",
+      "route": "no_match",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": true,
+      "reply": "我暂时没有找到足够可靠的景区资料来回答这个问题，建议您换个问法，或以景区官方信息为准。",
+      "citation_ids": [],
+      "citation_validation": "no_evidence",
+      "fallback_reason": "unsupported_or_unavailable_request",
+      "manifest_id": null,
+      "index_version": "legacy-v1",
+      "latency_ms": 0.011
+    },
+    {
+      "case_id": "doc-011",
+      "category": "history",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "祥符禅寺可以说是整个灵山佛教文化的源头。它始建于唐代，由玄奘法师的弟子窥基大师开坛讲经，北宋时正式得名\"祥符禅寺\"，历经千年香火不断。您看，寺内保留的千年古银杏、唐代六角井这些历史遗存，都见证了佛教文化在此地的千年传承。1994年灵山大佛奠基时，正是以祥符禅寺为根基，逐步打造出今天的灵山胜境景区。可以说，祥符禅寺是连接灵山历史与现代的重要纽带，没有它，就没有今天灵山深厚的佛教文化底蕴。【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 1800.705
+    },
+    {
+      "case_id": "doc-012",
+      "category": "guide",
+      "route": "hybrid",
+      "route_passed": true,
+      "grounded_passed": true,
+      "refusal_passed": null,
+      "reply": "第一次来灵山胜境，我推荐您走一条经典的深度游览路线。上午9点前入园可以避开人流高峰，从南门进入，先看灵山大照壁，再到佛手广场摸一摸“天下第一掌”沾沾福气，接着参观千年古刹祥符禅寺，听一听玄奘法师与“小灵山”的故事。然后登上216级台阶抱佛脚，下午重点游览灵山梵宫和五印坛城，感受不同风格的佛教艺术。如果您时间充裕，春秋季节来景色最好，还能赶上九龙灌浴的表演。您对哪个景点特别感兴趣，我可以再详细给您讲讲。【C1】",
+      "citation_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "latency_ms": 2063.737
+    }
+  ],
+  "gate": {
+    "passed": true,
+    "failures": []
+  }
+}

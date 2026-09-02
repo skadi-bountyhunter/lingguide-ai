@@ -1,0 +1,16 @@
+{
+  "name": "lingguide-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "灵境导游 Windows 桌面端",
+  "main": "main.cjs",
+  "scripts": {
+    "dev": "electron .",
+    "test": "node --test",
+    "build:dir": "electron-builder --config electron-builder.config.cjs --win --x64 --dir"
+  },
+  "devDependencies": {
+    "electron": "43.2.0",
+    "electron-builder": "26.15.3"
+  }
+}

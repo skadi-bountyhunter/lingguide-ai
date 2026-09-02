@@ -1,0 +1,113 @@
+{
+  "readiness_http_status": 200,
+  "readiness": {
+    "status": "ready",
+    "checks": {
+      "database": true,
+      "manifest": true,
+      "fts": true,
+      "vector": true,
+      "counts": true,
+      "fingerprint": true,
+      "ids": true,
+      "config": true
+    },
+    "details": {
+      "index_version": "shadow-20260718145255-6a0605c6",
+      "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+      "canonical_count": 36,
+      "fts_count": 36,
+      "vector_count": 36,
+      "canonical_fingerprint": "7cff50084d8877803fc3579d8683f99e60d4b43b13df4a7e50368e38cc2e70b7",
+      "manifest_fingerprint": "7cff50084d8877803fc3579d8683f99e60d4b43b13df4a7e50368e38cc2e70b7",
+      "embedding_model": "BAAI/bge-large-zh-v1.5",
+      "expected_embedding_model": "BAAI/bge-large-zh-v1.5",
+      "config_hash": "5017e4ff6b0755913931fe8587cba109cf70e3ee2fb381ac8f6610197496805d",
+      "expected_config_hash": "5017e4ff6b0755913931fe8587cba109cf70e3ee2fb381ac8f6610197496805d",
+      "vector_ids_match": true
+    }
+  },
+  "scenarios": [
+    {
+      "id": "faq",
+      "http_status": 200,
+      "latency_ms": 47.0,
+      "route": "faq",
+      "citations": 1,
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "id": "document",
+      "http_status": 200,
+      "latency_ms": 2703.0,
+      "route": "hybrid",
+      "citations": 5,
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "id": "followup",
+      "http_status": 200,
+      "latency_ms": 2375.0,
+      "route": "hybrid",
+      "citations": 5,
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "id": "route",
+      "http_status": 200,
+      "latency_ms": 2062.0,
+      "route": "hybrid",
+      "citations": 5,
+      "citation_validation": "server_attached",
+      "fallback_reason": null,
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "id": "weather",
+      "http_status": 200,
+      "latency_ms": 2735.0,
+      "route": "weather",
+      "citations": 1,
+      "citation_validation": "server_attached",
+      "fallback_reason": "fresh_provider",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "id": "refusal",
+      "http_status": 200,
+      "latency_ms": 31.0,
+      "route": "no_match",
+      "citations": 0,
+      "citation_validation": "no_evidence",
+      "fallback_reason": "unsupported_or_unavailable_request",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "id": "trace",
+      "http_status": 200,
+      "latency_ms": 16.0,
+      "route": "faq",
+      "citations": 1,
+      "citation_validation": "valid",
+      "fallback_reason": null,
+      "passed": true,
+      "reasons": []
+    }
+  ],
+  "covered_by_contract_test": [
+    "llm_failure"
+  ],
+  "passed": true
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'">
+  <title>灵境导游启动失败</title>
+  <style>
+    :root { color-scheme: light; font-family: "Microsoft YaHei", system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f5f7fa; color: #303133; }
+    main { width: min(620px, calc(100% - 64px)); padding: 36px; background: #fff; border: 1px solid #e4e7ed; border-radius: 12px; box-shadow: 0 12px 32px rgb(0 0 0 / 8%); }
+    h1 { margin: 0 0 16px; font-size: 24px; }
+    p { line-height: 1.7; overflow-wrap: anywhere; }
+    small { color: #909399; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>灵境导游暂时无法启动</h1>
+    <p id="message">后端服务未就绪，请稍后重试。</p>
+    <small id="logs"></small>
+  </main>
+  <script>
+    const params = new URLSearchParams(location.search)
+    document.querySelector('#message').textContent = params.get('message') || '后端服务未就绪，请稍后重试。'
+    const logPath = params.get('logPath')
+    document.querySelector('#logs').textContent = logPath ? `日志位置：${logPath}` : ''
+  </script>
+</body>
+</html>

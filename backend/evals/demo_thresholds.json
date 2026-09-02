@@ -1,0 +1,14 @@
+{
+  "minimum": {
+    "route_accuracy": 0.9,
+    "grounded_answer_accuracy": 0.85,
+    "citation_canonical_rate": 1.0,
+    "citation_locator_rate": 0.95,
+    "refusal_accuracy": 0.9,
+    "faq_accuracy": 0.95,
+    "repeat_stability": 0.9
+  },
+  "equals": {
+    "canonical_missing_total": 0
+  }
+}

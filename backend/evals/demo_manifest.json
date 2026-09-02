@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "suite_version": "lingguide-demo-v1",
+  "faq": {
+    "path": "app/faqs.json",
+    "count": 15,
+    "sha256": "b062270ef0bfbe7a253aaf350791b08029661b47efcae6ceb477c6d4fc4d3d03"
+  },
+  "documents": [
+    {
+      "content_sha256": "f320d4677a6e6af72f754180f7a5f304519860a08768d94719901b2f9c9af99c",
+      "chunk_count": 24
+    },
+    {
+      "content_sha256": "88ce8d303b9b65c5f8764db2f1bbc06dd7e4bfcc5381dca707b2409a05782a07",
+      "chunk_count": 12
+    }
+  ],
+  "active_index": {
+    "manifest_id": "7d494f1573fe4d0f9e077ab9cb2c314a",
+    "version": "shadow-20260718145255-6a0605c6",
+    "vector_collection": "lingguide_knowledge__shadow_20260718145255_6a0605c6",
+    "fts_namespace": "chunk_fts__shadow_20260718145255_6a0605c6",
+    "embedding_model": "BAAI/bge-large-zh-v1.5",
+    "config_hash": "5017e4ff6b0755913931fe8587cba109cf70e3ee2fb381ac8f6610197496805d",
+    "canonical_count": 36,
+    "fingerprint": "7cff50084d8877803fc3579d8683f99e60d4b43b13df4a7e50368e38cc2e70b7"
+  },
+  "evaluation": {
+    "path": "evals/demo_eval_v1.jsonl",
+    "case_count": 40,
+    "sha256": "fa555c9e1a974fcb01f55b19e18a6c9b5abf16958b38cf858ef2c44ff2f84c73"
+  }
+}

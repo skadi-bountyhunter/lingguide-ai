@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "video-analyzer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-video-analyzer@latest"
+      ],
+      "env": {}
+    }
+  }
+}

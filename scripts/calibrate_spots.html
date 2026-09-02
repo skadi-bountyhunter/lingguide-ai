@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>景点坐标校准</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", sans-serif; padding: 24px; background: #f5f1eb; color: #1a3a2a; }
+  h1 { font-size: 18px; }
+  #map { width: 100%; height: 360px; margin: 12px 0; border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #eee; text-align: left; font-size: 13px; }
+  th { background: #2D6A4F; color: #fff; }
+  tr.old td { color: #999; }
+  tr.new td { color: #2D6A4F; font-weight: 600; }
+  button { background: #B07D4F; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; margin-right: 8px; }
+  button:disabled { opacity: .5; cursor: default; }
+  .ok { color: #2D6A4F; } .err { color: #c0392b; }
+</style>
+</head>
+<body>
+<h1>景点坐标 POI 校准 <small style="font-weight:normal;color:#888">高德 PlaceSearch · 仅校准偏移</small></h1>
+<div id="map"></div>
+<button id="run">开始校准</button>
+<button id="apply" disabled>写回后端</button>
+<span id="status"></span>
+<table id="tbl">
+  <thead><tr><th>景点</th><th>旧坐标</th><th>新坐标 (POI)</th><th>POI 名</th><th>状态</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<script>
+// ⚠️ 请手动填入高德地图凭据（不要提交到 git）
+// 或使用 scripts/.env 配置后通过构建工具注入
+window._AMapSecurityConfig = { securityJsCode: 'YOUR_SECURITY_JS_CODE_HERE' };
+const KEY = 'YOUR_AMAP_WEB_KEY_HERE';
+const BACKEND = 'http://localhost:8000';
+let map, placeSearch, spots = [], results = [];
+
+const s = document.createElement('script');
+s.src = `https://webapi.amap.com/maps?v=2.0&key=${KEY}&plugin=AMap.PlaceSearch,AMap.Geocoder`;
+s.onload = () => {
+  map = new AMap.Map('map', { zoom: 16, center: [120.100, 31.423], mapStyle: 'amap://styles/light' });
+  placeSearch = new AMap.PlaceSearch({ city: '无锡', citylimit: true, pageSize: 5, extensions: 'all' });
+};
+document.head.appendChild(s);
+
+async function loadSpots() {
+  const r = await fetch(`${BACKEND}/api/spots`);
+  spots = await r.json();
+}
+
+document.getElementById('run').onclick = async () => {
+  await loadSpots();
+  const tbody = document.querySelector('#tbl tbody');
+  tbody.innerHTML = '';
+  results = [];
+  // 逐个 POI 搜索，避免并发触发限流
+  for (const sp of spots) {
+    const oldC = sp.lng ? `${sp.lng},${sp.lat}` : '无';
+    const trOld = document.createElement('tr'); trOld.className = 'old';
+    trOld.innerHTML = `<td>${sp.name}</td><td>${oldC}</td><td colspan="3">搜索中…</td>`;
+    tbody.appendChild(trOld);
+    await new Promise(r => placeSearch.search(sp.name, (status, res) => {
+      let nlng=null, nlat=null, poiName='', st='', stCls='';
+      if (status === 'complete' && res.poiList && res.poiList.pois.length) {
+        const poi = res.poiList.pois[0];
+        poiName = poi.name;
+        const loc = poi.location;
+        if (loc && loc.lng) {
+          nlng = loc.lng; nlat = loc.lat;
+          st = '待写回'; stCls = 'ok';
+          results.push({ id: sp.id, name: sp.name, lng: nlng, lat: nlat });
+        } else { st = 'POI 无坐标'; stCls = 'err'; }
+      } else { st = '无结果'; stCls = 'err'; }
+      const trNew = document.createElement('tr'); trNew.className = 'new';
+      trNew.innerHTML = `<td></td><td>${oldC}</td><td>${nlng!==null?nlng+', '+nlat:''}</td><td>${poiName}</td><td class="${stCls}">${st}</td>`;
+      trOld.replaceWith(trNew);
+      r();
+    }));
+  }
+  document.getElementById('apply').disabled = results.length === 0;
+  document.getElementById('status').textContent = `共校准 ${results.length}/${spots.length} 个`;
+  // 在地图上预览新旧标记
+  drawPreview();
+};
+
+function drawPreview() {
+  map.clearMap();
+  results.forEach(r => {
+    new AMap.Marker({ map, position: [r.lng, r.lat], label: { content: r.name, direction: 'top' } });
+  });
+  if (results.length) map.setFitView();
+}
+
+document.getElementById('apply').onclick = async () => {
+  let ok = 0;
+  for (const r of results) {
+    const res = await fetch(`${BACKEND}/api/spots/${r.id}`, {
+      method: 'PUT', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lng: r.lng, lat: r.lat }),
+    });
+    if (res.ok) ok++;
+  }
+  document.getElementById('status').textContent = `已写回 ${ok}/${results.length} 个，刷新游客端地图即可看到`;
+};
+</script>
+</body>
+</html>
